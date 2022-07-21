@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Inicio/Home</title>
+</head>
+
+<body>
+<!-- control+k control+c para comentarios -->
+    <div class="grillaGeneral">
+
+<header>
+    <h1> Bienvenidos</h1>
+    <h2> Inicio del proyecto Quetzal Publicidad </h2>
+</header>
+    <!-- encabezado / barra de navegacion-->
+
+    <nav>
+        <ul class="barraNav">
+            <!-- enlace relativo para navegavilidad -->
+            <li> 
+                <a href="index.html">INICIO</a>
+            </li>
+            <li>  
+                <a href="./secciones/nosotros.html">NOSOTROS</a>
+            </li>
+            <li>   
+                <a href="./secciones/servicios.html">SERVICIOS</a>
+            </li>
+            <li>  
+                <a href="./secciones/productos.html">PRODUCTOS</a>
+            </li>
+            <li> 
+                <a href="./secciones/contacto.html">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+
+<section class="galeriaGrid">
+    <section class="padre">
+        <h3 class="titulo">Galeria de Imagenes</h3>
+        <picture>
+            <source media="(min-width:500px)" srcset="imagenes/1.jpg">
+            <source media="(min-width:768px)" srcset="imagenes/1.jpg">
+            <source media="(min-width:1024px)" srcset="imagenes/1.jpg">
+            <img src="./imagenes/1.jpg" alt="vinil sobre elevador">
+        </picture>
+
+        <picture>
+            <source media="(min-width:500px)" srcset="./imagenes/2.jpg">
+            <source media="(min-width:768px)" srcset="./imagenes/2.jpg">
+            <source media="(min-width:1024px)" srcset="./imagenes/2.jpg">
+            <img src="./imagenes/2.jpg" alt="vinil en ventana">
+        </picture>
+        
+        <picture>
+            <source media="(min-width:500px)" srcset="./imagenes/3.jpg">
+            <source media="(min-width:768px)" srcset="./imagenes/3.jpg">
+            <source media="(min-width:1024px)" srcset="./imagenes/3.jpg">
+            <img src="./imagenes/3.jpg" alt="vinil sobre">
+        </picture>
+    </section>
+</section>
+
+<section class="sec2">
+    <h2>Armando Cortina</h2>
+    <p>Tengo 28 años y soy ingeniero robotico industrial egresado del Instituto Politecnico Nacional y quiero aprender desarrollo full stack para ingresarlo dentro de mi negocio, poder ayudar con precios accesibles a pequeños negocios que no pueden invertir en agencias o estudios de altos costos iniciales y claro tambien generar un ingreso extra</p>
+
+
+            <!-- se pueden usar jpg, gift, alt llenarlo por cuestiones de SEO -->
+    <img width="200" height="200" src="./imagenes/RobloxScreenShot20220418_180229833.png" alt="roblox diego">
+
+    <div class="video">
+            <!--iframe para tener el video fuera del codigo html  -->
+    <iframe  src="https://www.youtube.com/embed/xIDLs8fN1TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+
+</section>
+
+<footer>
+    <!-- pie de pagina -->
+    <h2>Pie de pagina</h2>
+    <h3>Proximamente redes sociales</h3>
+</footer>
+
+</div>
+
+</body>
+
+</html>
