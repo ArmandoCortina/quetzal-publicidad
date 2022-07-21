@@ -121,6 +121,12 @@ footer{
     gap: 15px;
 }
 
+.img2{
+    transition: all 8s; 
+}
+.img2:hover{
+    transform: rotate(360deg);
+}
 
 /*Declaramos las areas para nuestra primera medida*/
 
