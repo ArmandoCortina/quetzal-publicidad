@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto</title>
 </head>
@@ -15,25 +16,36 @@
             <h3>Comunicate con nosotros atraves de nuestros diferentes medios de contacto.</h3>
     </header>
 
-        <nav class="barraNav">
-            <ul>
-                <li> 
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>  
-                    <a href="nosotros.html">NOSOTROS</a>
-                </li>
-                <li> 
-                    <a href="servicios.html">SERVICIOS</a>
-                </li>
-                <li>   
-                    <a href="productos.html">PRODUCTOS</a>
-                </li>
-                <li>  
-                    <a href="contacto.html">CONTACTO</a>
-                </li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menú</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
+                <li><a class="dropdown-item" href="productos.html">Productos</a></li>  
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
             </ul>
-        </nav>
+        </div>
+        </div>
+    </nav>
 
 <section class="sociales">
         <p>proximamente resdes sociales con imagenes y texto</p>
@@ -88,13 +100,18 @@
 </section>
 
     <footer>
+        <form>
+            <h3>Suscribete a nuestro Newletter</h3>
+            <input type="email" placeholder="Ingresa tu e-mail">
+            <button>Enviar</button>
+        </form>
         <!-- pie de pagina -->
         <h2>PIE DE PAGINA</h2>
         <h3>Proximamente redes sociales</h3>
     </footer>
-
-
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </body>
 </html>

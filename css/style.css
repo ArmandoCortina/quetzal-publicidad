@@ -33,16 +33,6 @@ header{
     justify-content: center;
     }
 
-nav ul il{
-    list-style-type: none;
-}
-
-nav {
-    background-color: black;
-    padding: 20px;
-    margin: 10px;
-}
-
 a { 
     color: white;
     text-decoration: none;
