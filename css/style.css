@@ -12,6 +12,7 @@ font-family: 'Roboto', sans-serif;
 
 
 /*mobile first*/
+
 *{
     margin: 0;   /* margenes en 0 en todos los navegadores*/
     padding: 0;   /*espaciado*/
@@ -37,6 +38,12 @@ a {
     color: white;
     text-decoration: none;
 }
+.cuadro:hover{
+background-color: greenyellow;
+}
+.cuadro:active{
+    background-color: rgb(74, 74, 74);
+    }
 
 li{
     font-family: 'Fascinate', cursive;
@@ -97,6 +104,7 @@ footer{
     background-image: url("../imagenes/fondo.jpg"); 
     padding: 10px;
     text-align: center;
+    width: 100%;
 }
 .nombre{
     display: inline-block;
@@ -117,6 +125,14 @@ footer{
 .img2:hover{
     transform: rotate(360deg);
 }
+
+.productodescrip{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 
 /*Declaramos las areas para nuestra primera medida*/
 
@@ -150,7 +166,8 @@ footer{
         "footer";
     }
 
-@media (min-width: 500px) {
+
+@media (min-width: 576px) {
 
         .grillaGeneral{
             margin: 0;
@@ -171,7 +188,7 @@ footer{
 }
 
 @media (min-width: 768px) {
-  
+
     .grillaGeneral{
         margin: 0;
         grid-template-areas: 
@@ -193,8 +210,8 @@ footer{
 }
 }
 
-@media (min-width: 1024px) {
-  
+@media (min-width: 992px) {
+
     .grillaGeneral{
         color: goldenrod;
     }
@@ -217,6 +234,48 @@ img{
 footer{
     margin-top: 1.5em;
 }
+}
+
+
+@media (min-width: 1200px){
+
+    .grillaGeneral{
+        color: goldenrod;
+    }
+nav ul{
+justify-content: space-between;
+}
+.galeriaGrid{
+    background-color: rgb(4, 4, 166);
+}
+.padre{
+    padding: 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1 fr;
+    height: auto;
+    margin: 0;
+}
+img{
+    margin-top: 0;
+}
+footer{
+    margin-top: 1.5em;
+}
+}
+
+@media (min-width: 1400px) {
+
+    .grillaGeneral{
+        margin: 0;
+        grid-template-areas: 
+        "header  header   header  header"
+        "nav     nav      nav     nav"
+        "sec2    galeria  galeria galeria"
+        "footer  footer   footer  footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 1.5em;
+    }
+
 }
 
 /*Declaramos las areas para nuestra primera medida Nosotros*/
@@ -251,7 +310,7 @@ footer{
     "footer";
 }
 
-@media (min-width: 500px) {
+@media (min-width: 576px) {
 
     .grillaNosotros{
         margin: 0;
@@ -259,7 +318,7 @@ footer{
         "nav         nav"
         "header      header"
         "trayectoria clientes"
-        "footer  footer";
+        "footer      footer";
         grid-template-columns: 1fr 1fr;
     }
 
@@ -294,17 +353,9 @@ img{
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 1.5em;
     }
-
-nav ul{
-justify-content: space-between;
-}
-
 p {
     font-size: 20px;
     color: white;
-}
-footer{
-    margin-top: 1.5em;
 }
 img{
     margin: 10px;
@@ -312,7 +363,16 @@ img{
 }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
+    nav ul{
+        justify-content: space-between;
+        }
+        footer{
+            margin-top: 1.5em;
+        }
+    }
+
+@media (min-width: 1200px) {
 
 h2{
     font-size: 50px;
@@ -334,6 +394,19 @@ footer{
 }
 }
 
+@media (min-width: 1400px) {
+
+    .grillaNosotros{
+        margin: 0;
+        grid-template-areas: 
+        "nav         nav         nav       nav"
+        "header      header      header    header"
+        "trayectoria clientes    clientes  clientes"
+        "footer      footer      footer    footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 1.5em;
+    }
+}
 /*Declaramos las areas para nuestra primera medida Servicios*/
 
 header{
@@ -366,7 +439,7 @@ footer{
     "footer";
 }
 
-@media (min-width: 500px) {
+@media (min-width: 576px) {
 
     .grillaServicios{
         margin: 0;
@@ -375,15 +448,13 @@ footer{
         "header      header"
         "descripcion descripcion"
         "servicios   servicios"
-        "footer  footer";
+        "footer      footer";
         grid-template-columns: 1fr 1fr;
     }
-
 nav ul{
 display: flex;
 justify-content: space-between;
 }
-
 footer{
 margin-top: 0;  
 }
@@ -393,7 +464,6 @@ margin-top: 0;
     align-items: center;
 }
 }
-
 
 @media (min-width: 768px) {
     .grillaServicios{
@@ -407,7 +477,6 @@ margin-top: 0;
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 1.5em;
     }
-
 nav ul{
 justify-content: space-between;
 }
@@ -434,7 +503,13 @@ img{
 }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
+footer{
+    margin-top: 2em;
+}
+}
+
+@media (min-width: 1200px) {
 
 h2{
     font-size: 50px;
@@ -463,17 +538,31 @@ footer{
 }
 .servicio1{
     grid-area: servicio1;
-}.servicio2{
+}
+.servicio2{
     grid-area: servicio2;
-}.servicio3{
+}
+.servicio3{
     grid-area: servicio3;
-}.servicio4{
+}
+.servicio4{
     grid-area: servicio4;
 }
-
 }
 
-
+@media (min-width: 1400px) {
+    .grillaServicios{
+        margin: 0;
+        grid-template-areas: 
+        "nav         nav         nav         nav"
+        "header      header      header      header"
+        "descripcion descripcion descripcion descripcion"
+        "servicios   servicios   servicios   servicios"
+        "footer      footer      footer      footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 1.5em;
+    }
+}
 /*Declaramos las areas para nuestra primera medida Productos*/
 
 header{
@@ -482,7 +571,7 @@ header{
 nav{
         grid-area: nav;
     }
-.procutodescrip{
+.productodescrip{
     grid-area: descripcion;
 }
 .productos{
@@ -506,7 +595,7 @@ footer{
     "footer";
 }
 
-@media (min-width: 500px) {
+@media (min-width: 576px) {
 
     .grillaProductos{
         margin: 0;
@@ -518,7 +607,6 @@ footer{
         "footer      footer";
         grid-template-columns: 1fr 1fr;
     }
-
 nav ul{
 display: flex;
 justify-content: space-between;
@@ -526,10 +614,6 @@ justify-content: space-between;
 
 footer{
 margin-top: 0;  
-}
-.productos{
-    display: flex;
-    align-items: center;
 }
 h2{
     font-size: 40px;
@@ -589,20 +673,23 @@ img{
 }
 }
 
+@media (min-width: 992px) {
 
-@media (min-width: 1024px) {
+    h2{
+        font-size: 50px;
+        color: blue;
+    }
+    h3{
+        font-size: 35px;
+        padding: 15px;
+    }
+    nav ul{
+    justify-content: space-between;
+    }
+}
 
-h2{
-    font-size: 50px;
-    color: blue;
-}
-h3{
-    font-size: 35px;
-    padding: 15px;
-}
-nav ul{
-justify-content: space-between;
-}
+@media (min-width: 1200px) {
+
 img{
     width: 450px;
 }
@@ -619,15 +706,32 @@ footer{
 }
 .producto1{
     grid-area: producto1;
-}.producto2{
+}
+.producto2{
     grid-area: producto2;
-}.producto3{
+}
+.producto3{
     grid-area: producto3;
-}.producto4{
+}
+.producto4{
     grid-area: producto4;
 }
-
 }
+
+@media (min-width: 1400px) {
+    .grillaProductos{
+        margin: 0;
+        grid-template-areas: 
+        "nav         nav         nav         nav"
+        "header      header      header      header"
+        "descripcion descripcion descripcion descripcion"
+        "productos   productos   productos   productos"
+        "footer      footer      footer      footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 1.5em;
+    }
+}
+
 
 /*Declaramos las areas para nuestra primera medida Contacto*/
 
@@ -661,7 +765,7 @@ footer{
     "footer";
 }
 
-@media (min-width: 500px) {
+@media (min-width: 576px) {
 
     .grillaContacto{
         margin: 0;
@@ -678,7 +782,6 @@ nav ul{
 display: flex;
 justify-content: space-between;
 }
-
 footer{
 margin-top: 0;  
 }
@@ -707,7 +810,9 @@ h3{
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 1.5em;
     }
+}
 
+@media (min-width: 992px) {
 nav ul{
 justify-content: space-between;
 }
@@ -721,11 +826,10 @@ p{
 }
 }
 
-
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 
 h2{
-    font-size: 60px;
+    font-size: 55px;
     color: blue;
 }
 h3{
@@ -738,5 +842,17 @@ justify-content: space-between;
 footer{
     margin-top: 1.5em;
 }
+}
 
+@media (min-width: 1400px) {
+    .grillaContacto{
+        margin: 0;
+        grid-template-areas: 
+        "nav         nav         nav        nav"
+        "header      header      header     header"
+        "sociales    sociales    formulario formulario"
+        "footer      footer      footer     footer";
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-bottom: 1.5em;
+    }
 }
