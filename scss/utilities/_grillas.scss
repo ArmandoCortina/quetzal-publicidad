@@ -1,0 +1,31 @@
+/*Declaramos las areas para nuestra primera medida*/
+
+header{
+    grid-area: header;
+    }
+nav{
+        grid-area: nav;
+    }
+.galeriaGrid{
+        grid-area: galeria;
+    }
+.sec2{
+    grid-area: sec2;
+}
+footer{
+        grid-area: footer;
+    }
+
+    /*Empezamos a acomodar por areas*/
+
+    .grillaGeneral{
+        margin-bottom: 1.5em;
+        display: grid;
+        gap: 20px;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "galeria"
+        "sec2"
+        "footer";
+    }

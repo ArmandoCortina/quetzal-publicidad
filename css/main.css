@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #022859;
+  color: #F2F2F2;
+  background-size: auto;
+  text-align: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body img {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 1cm;
+}
+body p {
+  padding: 5 px;
+  margin: 5px;
+}
+body .video {
+  padding: 10px;
+  text-align: center;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #03060D;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*Declaramos las areas para nuestra primera medida*/
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.galeriaGrid {
+  grid-area: galeria;
+}
+
+.sec2 {
+  grid-area: sec2;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*Empezamos a acomodar por areas*/
+.grillaGeneral {
+  margin-bottom: 1.5em;
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "header" "nav" "galeria" "sec2" "footer";
+}
+
+/*# sourceMappingURL=main.css.map */

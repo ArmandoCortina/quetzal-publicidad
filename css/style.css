@@ -30,7 +30,8 @@ body{
 /* estilos de header*/
 header{
     padding: 10px; 
-    display: grid;
+    display: flex;
+    align-items: center;
     justify-content: center;
     }
 

@@ -1,0 +1,22 @@
+body {
+    background-color: $color-body;
+    color: $color-textos;
+    background-size: auto;
+    text-align: center;
+    flex-direction: column;
+    min-height: 100vh;
+
+    img{
+        margin-top: 5px;
+        padding: 10px;
+        border-radius: 1cm;
+    }
+    p{
+        padding: 5 px;
+        margin: 5px;
+    }
+    .video{
+        padding: 10px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,9 @@
+@import "./utilities/reset";
+@import "./utilities/variables.scss";
+@import "./utilities/mixins";
+
+
+@import "./layout/body";
+@import "./layout/header.scss";
+@import "./layout/footer";
+@import "./utilities/grillas";
