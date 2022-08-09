@@ -6,127 +6,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- descripcion y palabras clave -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Agencia creativa especializada en servicios de publicidad. Promociones, envios nacionales, cotización gratis, Tienda Online">
+    <meta name="keywords" content="Publicidad, Publicidad impresa, marketing, impresión digital, branding, diseño de logo, social media, sitios web">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/main.css">
-    <title>Home</title>
+    <title>Quetzal Publicidad / Pagina Inicio</title>
 </head>
 
+
 <body>
-<!-- control+k control+c para comentarios -->
+
     <div class="grillaGeneral">
 
 <header>
-    <h1> Bienvenidos</h1>
-    <h2> Inicio del proyecto Quetzal Publicidad </h2>
+    <div class="logo">
+        <img width="300" src="./imagenes/logo quetzal publicidad.png" alt="logo quetzal publicidad">
+        </div>
 </header>
 
-    <!-- encabezado / barra de navegacion-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menú</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Servicios
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="./secciones/servicios.html">Servicios</a></li>
-                <li><a class="dropdown-item" href="./secciones/productos.html">Productos</a></li>  
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
-            </li>
+<nav class="navbar navbar-expand-lg navbar-dark w-100" style="background-color: #051026;">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">Menú</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Servicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="./secciones/servicios.html">Servicios</a></li>
+            <li><a class="dropdown-item" href="./secciones/productos.html">Productos</a></li>  
             </ul>
-        </div>
-        </div>
-    </nav>
-
-<section class="galeriaGrid">
-    <section class="padre">
-        <h3 class="titulo">Galeria de Imagenes</h3>
-        <picture>
-            <source media="(min-width:500px)" srcset="imagenes/1.jpg">
-            <source media="(min-width:768px)" srcset="imagenes/1.jpg">
-            <source media="(min-width:1024px)" srcset="imagenes/1.jpg">
-            <img src="./imagenes/1.jpg" alt="vinil sobre elevador">
-        </picture>
-
-        <picture>
-            <source media="(min-width:500px)" srcset="./imagenes/2.jpg">
-            <source media="(min-width:768px)" srcset="./imagenes/2.jpg">
-            <source media="(min-width:1024px)" srcset="./imagenes/2.jpg">
-            <img src="./imagenes/2.jpg" alt="vinil en ventana">
-        </picture>
-        
-        <picture>
-            <source media="(min-width:500px)" srcset="./imagenes/3.jpg">
-            <source media="(min-width:768px)" srcset="./imagenes/3.jpg">
-            <source media="(min-width:1024px)" srcset="./imagenes/3.jpg">
-            <img src="./imagenes/3.jpg" alt="vinil sobre pared">
-        </picture>
-    </section>
-<!--
-        <section>
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img  src="./imagenes/9.jpg" class="d-block w-100" alt="vinil en fachada">
-                </div>
-                <div class="carousel-item">
-                    <img  src="./imagenes/8.jpg" class="d-block w-100" alt="vinil para vidrio">
-                </div>
-                <div class="carousel-item">
-                    <img src="./imagenes/7.jpg" class="d-block w-100" alt="vinil en exterior">
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-        </section>
-        -->
-</section>
-
-<section class="sec2">
-    <h2>Armando Cortina</h2>
-    <p>Tengo 28 años y soy ingeniero robotico industrial egresado del Instituto Politecnico Nacional y quiero aprender desarrollo full stack para ingresarlo dentro de mi negocio, poder ayudar con precios accesibles a pequeños negocios que no pueden invertir en agencias o estudios de altos costos iniciales y claro tambien generar un ingreso extra</p>
-
-
-            <!-- se pueden usar jpg, gift, alt llenarlo por cuestiones de SEO -->
-    <img width="200" height="200" src="./imagenes/RobloxScreenShot20220418_180229833.png" alt="roblox diego">
-
-    <div class="video">
-            <!--iframe para tener el video fuera del codigo html  -->
-    <iframe  src="https://www.youtube.com/embed/xIDLs8fN1TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
+        </li>
+        </ul>
     </div>
+    </div>
+</nav>
 
+
+<main>
+    <!-- carrusel noticias, promociones -->
+    
+<section class="carruselNoticias">
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="./imagenes/1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./imagenes/2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./imagenes/3.jpg" class="d-block w-100" alt="...">
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<button class="boton">Promociones</button>
 </section>
+
+
+<!-- Seccion nosotros -->
+<section>
+    <div>
+        <h1>¡Tus mejores amigos en publicidad!</h1>
+        <p>Somos una agencia creativa especializada en servicios de publicidad, enfocados en cubrir las necesidades que toda marca o negocio necesita tanto fisica como digital a lo largo de su trayectoria.</p>
+        <!-- <p>Somos una agencia creativa especializada en servicios de publicidad, enfocados en cubrir las necesidades que toda empresa o PyME necesita a lo largo de su trayectoria, ofrecemos soluciones estrategicas para el posicionamiento, desarrollo y comunicación efectiva de la marca tanto fisica como digital, para poder llegar de una manera innovadora, creativa y visualmente atractiva al cliente o consumidor.</p> -->
+    </div>
+    <button class="boton">Conócenos</button>
+</section>
+
+
+<!-- servicios destacados -->
+<section>
+    <h2>Destacados</h2>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="./imagenes/1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./imagenes/2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="./imagenes/3.jpg" class="d-block w-100" alt="...">
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <button class="boton">¡Conoce más!</button>
+</section>
+
+
+<!-- Productos mas vendidos de la empresa -->
+
+<section>
+    <h2>Lo más vendido</h2>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="./imagenes/1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./imagenes/2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+        <img src="./imagenes/3.jpg" class="d-block w-100" alt="...">
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<div>
+    <button>
+        <img class="boton icono-tienda" src="" alt="">
+    </button>
+</div>
+</section>
+
+
+<section>iconos moviles para chat</section>
+</main>
+
 
 <footer>
 
-    <h2>Pie de pagina</h2>
-    <h3>Proximamente redes sociales</h3>
+<!-- newletter -->
+    <section class="newsletter">
+        <div class="newsletter__formulario">
+        <h2>NEWSLETTER</h2>
+        <P>Suscribete para obtener todas nuestras promociones y novedades</P>
+        <input type="text">
+        </div>
+        <div class="newsletter__boton">
+            <button class="boton">Suscribirse</button>
+        </div>
+    </section>
+
+<!-- redes sociales -->
+    <section class="redesSociales">
+        <img src="./imagenes/icono-facebook.svg" alt="icono facebook">
+        <img src="./imagenes/icono-whatsapp.svg" alt="icono whatsapp">
+        <img src="./imagenes/icono-instagram.svg" alt="icono instagram">
+        <img src="./imagenes/icono linkedin.svg" alt="icono linkedin">
+    </section>
+
+
+<!-- Acordeón quetzal publicidad -->
+    <section class="acordeon">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Quetzal Publicidad
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Nosotros
+                </div>
+            
+                <div class="accordion-body">
+                    Servicios
+                </div>
+            
+                <div class="accordion-body">
+                    Productos
+                </div>
+            
+                <div class="accordion-body">
+                    Tienda Online
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Contacto
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Escríbenos o llámanos
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Legales
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Formas de pago
+                </div>
+                <div class="accordion-body">
+                    Términos y condiciones
+                </div>
+                <div class="accordion-body">
+                    Aviso de privacidad
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
 
 </footer>
 

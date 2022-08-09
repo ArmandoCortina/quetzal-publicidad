@@ -1,8 +1,42 @@
 @mixin FlexCenterColumn {
-    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
+
+@mixin FlexCenterSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+
+h1{
+display: flex;
+text-align: center;   
+}
+p{
+    display: flex;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 14px;
+}
+h2{
+    font-size: 20px;
+}
+}
+
+@mixin estiloBoton {
+    border: none;
+    border-radius: 10px;
+    background-color: $color-boton;
+    color: $color-textos;
+    font-size: 15px;
+    width: 100px;
+    height: 28px;
+}
+
 

@@ -1,0 +1,19 @@
+main{
+    background-color: $color-main;
+    color: $color-textos;
+    font-family: $font-textos;
+    @include FlexCenterColumn;
+
+    section{
+        @include FlexCenterSection;
+    }
+
+    .carusel-inner{
+        max-height: 39rem;
+        width: 100%;
+    }
+
+    button {
+        @include estiloBoton;
+    }
+}

@@ -1,48 +1,102 @@
-@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fascinate&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Almarai&family=Lato&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #022859;
-  color: #F2F2F2;
-  background-size: auto;
-  text-align: center;
-  flex-direction: column;
-  min-height: 100vh;
-}
-body img {
-  margin-top: 5px;
-  padding: 10px;
-  border-radius: 1cm;
-}
-body p {
-  padding: 5 px;
-  margin: 5px;
-}
-body .video {
-  padding: 10px;
-  text-align: center;
-}
-
 header {
-  padding: 10px;
+  background-color: #091b3c;
+  color: #F2F2F2;
+  font-family: "Lato", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+navbar li {
+  font-family: "Almarai", sans-serif;
+  display: inline-block;
+  font-size: 20px;
+}
+
+main {
+  background-color: #022859;
+  color: #F2F2F2;
+  font-family: "Lato", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 10px;
+}
+main section h1 {
+  display: flex;
+  text-align: center;
+}
+main section p {
+  display: flex;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 14px;
+}
+main section h2 {
+  font-size: 20px;
+}
+main .carusel-inner {
+  max-height: 39rem;
+  width: 100%;
+}
+main button {
+  border: none;
+  border-radius: 10px;
+  background-color: #0069f3;
+  color: #F2F2F2;
+  font-size: 15px;
+  width: 100px;
+  height: 28px;
 }
 
 footer {
-  background-color: #03060D;
-  padding: 10px;
+  background-color: #091b3c;
+  color: #F2F2F2;
+  font-family: "Lato", sans-serif;
+  padding-top: 15px;
+  padding-bottom: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+footer .newsletter {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer .newsletter__formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .newsletter button {
+  border: none;
+  border-radius: 10px;
+  background-color: #0069f3;
+  color: #F2F2F2;
+  font-size: 15px;
+  width: 100px;
+  height: 28px;
 }
 
 /*Declaramos las areas para nuestra primera medida*/
@@ -68,9 +122,7 @@ footer {
 
 /*Empezamos a acomodar por areas*/
 .grillaGeneral {
-  margin-bottom: 1.5em;
   display: grid;
-  gap: 20px;
   grid-template-areas: "header" "nav" "galeria" "sec2" "footer";
 }
 

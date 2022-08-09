@@ -19,9 +19,7 @@ footer{
     /*Empezamos a acomodar por areas*/
 
     .grillaGeneral{
-        margin-bottom: 1.5em;
         display: grid;
-        gap: 20px;
         grid-template-areas: 
         "header"
         "nav"

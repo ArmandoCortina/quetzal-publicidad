@@ -1,0 +1,6 @@
+header{
+    background-color: $color-header;
+    color: $color-textos;
+    font-family: $font-textos;
+    @include FlexCenterColumn;
+    }

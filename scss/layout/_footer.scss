@@ -1,4 +1,21 @@
 footer{
     background-color: $color-footer;
+    color: $color-textos;
+    font-family: $font-textos;
     @include FlexCenterColumn;
+
+    .newsletter{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &__formulario{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        button {
+            @include estiloBoton;
+        }
+    }
+
     }
