@@ -4,108 +4,207 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/quetzal.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="description" content="Ponte en contacto con nosotros, llamanos, mandanos mensaje o visitanos, trabajemos juntos, ¡confia en nosotros! Somos quetzal Publicidad">
     <meta name="keywords" content="quetzal publicidad, medios de contacto, redes sociales, ubicación, correo, numero telefonico">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Contacto</title>
 </head>
 <body>
     <div class="grillaContacto">
 
     <header>
-            <h2>Formulario</h2>
-            <h3>Comunicate con nosotros atraves de nuestros diferentes medios de contacto.</h3>
+        <div class="logo">
+            <img width="300" src="../imagenes/logo quetzal publicidad servicios blanco.png" alt="logo quetzal publicidad">
+        </div>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0597F2">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#">Menú</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="index.html">
+                <img src="../imagenes/quetzal.png" alt="vector quetzal" width="36" height="30">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="nosotros.html">Nosotros</a>
             </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Servicios
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="servicios.html">Servicios</a></li>
-                <li><a class="dropdown-item" href="productos.html">Productos</a></li>  
-                </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
             </ul>
+            <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn" style="border-color: #ffffff; color: #ffffff;" type="submit">Buscar</button>
+            </form>
         </div>
         </div>
     </nav>
 
-<section class="sociales">
-        <p>proximamente resdes sociales con imagenes y texto</p>
+    <h1>¡Contáctanos!</h1>
+
+<section>
+    <div>
+        <img width="300" src="../imagenes/soporte.jpg" alt="imagen de soporte tecnico">
+        <p class="frase">"El resultado de un buen negocio es un cliente satisfecho"</p>
+    </div>
 </section>
 
-<section class="formulario">
 
-    <form action="#" class="formulario">
-        <label for="nombre_apellido">Ingrese Nombre y Apellido</label>
-        <input type="text" name="nombre_apellido"  />
-        <br>
-        <label for="edad">Ingrese Edad</label>
-        <input type="number" name="edad"  />
-        <br>
-        <label for="Observaciones"> Observaciones:</label>
-        <br>
-        <textarea type="text" name="Observaciones"></textarea>
-        <br>
+<section>
+    <p>Comunícate con nosotros y te haremos llegar la información que deseas.</p>
+    
+    <div class="container">
+        <form action="" class="form">
+            <div class="form__header">
+                <h2 class="form__title">C<span>ontactanos</span></h2>
+            </div>
+    
+            <label for="nombre" class="form__label">Nombre</label>
+            <input type="text" id="nombre" class="form__input" placeholder="Ingresa tu nombre">
+    
+            <label for="telefono" class="form__label">Número Telefonico</label>
+            <input type="number" id="telefono" class="form__input" placeholder="Número de contacto">
+    
+            <label for="ciudad" class="form__label">Ciudad</label>
+            <input type="text" id="ciudad" class="form__input" placeholder="De donde nos contactas">
+    
+            <label for="correo" class="form__label">Correo Electrónico</label>
+            <input type="email" id="correo" class="form__input" placeholder="Escriba su correo">
+    
+            <label for="mensaje" class="form__label">Mensaje</label>
+            <textarea id="mensaje" class="form__textarea" placeholder="Como podemos ayudarte..."></textarea>
+    
+            <input type="submit" class="submit" value="Enviar">
+    
+        </form>
+    </div>
+</section>
+    
 
-
-        <input class="cuadro" type="submit" value="Enviar info"  />
-        <input class="cuadro" type="reset" value="Borrar info"  />
-        <br>
-
-
-        <div class="nombre">Hombre</div>
-        <input type="radio" name="sexo" value="Hombre">        
-        <div class="nombre">Mujer</div>
-            <input type="radio" name="sexo" value="Mujer">
-        <br>
-        <br>
-
-        <select name="medio de contacto">
-
-        <option value="W">Whatsapp</option>
-        <option value="C">Celular</option>
-        <option value="L">Tel. Local</option>
-        </select>
-        <br>
-        <label for="contacto">Medio elegido</label>
-        <input type="number" name="contacto"  />
-        <br>
-        <br>
-        <div>Acepta ternimos y condiciones</div>
-        <input type="checkbox" name="aceptar" value="1"  />
-        <br>
-        <input class="cuadro" type="submit" name="Enviar info"  />
-
-    </form>
-    <!-- termino del formulario -->
-
+<section>
+    <h2>Medios alternativos de contacto</h2>
 </section>
 
-    <footer>
-        <!-- pie de pagina -->
-        <h2>PIE DE PAGINA</h2>
-        <h3>Proximamente redes sociales</h3>
+
+<section>
+    <h2>¡Siguenos en Redes Sociales!</h2>
+</section>
+
+
+<section>
+    <h2>Nos encontramos ubicados en:</h2>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4474.464561206033!2d-98.97139721804578!3d19.43135588024356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e377d34b6499%3A0x95c6ee4deca16368!2sDIPROGLES!5e0!3m2!1ses-419!2smx!4v1660857617407!5m2!1ses-419!2smx" width="450px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+
+<footer>
+
+    <!-- newletter -->
+        <section class="newsletter">
+            <h2><strong>Suscribete a nuestro Newsletter</strong></h2>
+            <form class="formulario" action="#">
+                <label for="correo"></label>
+                <input  type="text" name="correo"/>
+            </form>
+            <div>
+                <button class="newsletter__boton">Suscribirse</button>
+            </div>
+        </section>
+    
+    <!-- redes sociales -->
+        <section class="redesSociales">
+            <h2><strong>Síguenos en Redes Sociales</strong></h2>
+            <div>
+            <img src="../imagenes/icono-facebook.svg" alt="icono facebook">
+            <img src="../imagenes/icono-whatsapp.svg" alt="icono whatsapp">
+            <img src="../imagenes/icono-instagram.svg" alt="icono instagram">
+            <img src="../imagenes/icono linkedin.svg" alt="icono linkedin">
+            </div>
+            
+        </section>
+    
+    
+    <!-- Acordeón quetzal publicidad -->
+        <section class="acordeon">
+            <div class="accordion" id="accordionFlushExample">
+                <div class="accordion-item accordion-bg">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" style="background-color: #F2F2F2;"  type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Quetzal Publicidad
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Nosotros
+                    </div>
+                
+                    <div class="accordion-body">
+                        Servicios
+                    </div>
+                
+                    <div class="accordion-body">
+                        Productos
+                    </div>
+                
+                    <div class="accordion-body">
+                        Tienda Online
+                    </div>
+                </div>
+                </div>
+    
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" style="background-color: #F2F2F2;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Contacto
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Escríbenos o llámanos
+                    </div>
+                </div>
+                </div>
+    
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" style="background-color: #F2F2F2;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Legales
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        Formas de pago
+                    </div>
+                    <div class="accordion-body">
+                        Términos y condiciones
+                    </div>
+                    <div class="accordion-body">
+                        Aviso de privacidad
+                    </div>
+                </div>
+                </div>
+            </div>
+    
+        </section>
+    
     </footer>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

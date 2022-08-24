@@ -6,97 +6,56 @@
 }
 
 header {
-  background-color: #091b3c;
-  color: #F2F2F2;
-  font-family: "Lato", sans-serif;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  background-image: linear-gradient(rgba(12, 17, 29, 0.816), rgba(12, 17, 29, 0.816)), url(../imagenes/quetzal1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  padding-bottom: 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
-
-navbar li {
-  font-family: "Almarai", sans-serif;
-  display: inline-block;
-  font-size: 20px;
+header .logo {
+  padding: 5px;
 }
 
 main {
-  background-color: #022859;
-  color: #F2F2F2;
+  background-color: #F2F2F2;
+  color: #091b3c;
   font-family: "Lato", sans-serif;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-main section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding-top: 10px;
-}
-main section h1 {
-  display: flex;
-  text-align: center;
-}
-main section p {
-  display: flex;
-  text-align: center;
-  padding-top: 5px;
-  font-size: 14px;
-}
-main section h2 {
-  font-size: 20px;
-}
-main .carusel-inner {
-  max-height: 39rem;
-  width: 100%;
-}
-main button {
-  border: none;
-  border-radius: 10px;
-  background-color: #0069f3;
-  color: #F2F2F2;
-  font-size: 15px;
-  width: 100px;
-  height: 28px;
 }
 
 footer {
-  background-color: #091b3c;
-  color: #F2F2F2;
+  background-color: #0597F2;
+  color: #091b3c;
   font-family: "Lato", sans-serif;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+}
+footer h2 {
+  font-size: 16px;
 }
 footer .newsletter {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-footer .newsletter__formulario {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
 }
-footer .newsletter button {
+footer .newsletter__boton {
+  margin-top: 10px;
+  margin-bottom: 30px;
   border: none;
   border-radius: 10px;
   background-color: #0069f3;
   color: #F2F2F2;
   font-size: 15px;
-  width: 100px;
-  height: 28px;
+  width: 150px;
+  height: 35px;
+}
+footer .redesSociales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 /*Declaramos las areas para nuestra primera medida*/
@@ -124,6 +83,83 @@ footer {
 .grillaGeneral {
   display: grid;
   grid-template-areas: "header" "nav" "galeria" "sec2" "footer";
+}
+
+/*secciones*/
+.container .form .form__header .form__title {
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #0597F2;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.container .form .form__header .form__title span {
+  color: white;
+}
+
+.container .form {
+  background: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  max-height: 650px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+}
+
+.container .form .form__label {
+  display: block;
+  color: #0597F2;
+  font-size: 16px;
+  font-family: sans-serif;
+  position: relative;
+}
+
+.container .form .form__input, .form__textarea {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #0597F2;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-size: 14px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.container .form .form__textarea {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+.container .form .submit {
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 16px;
+  outline: none;
+  background: #0069f3;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.container .form .submit:hover {
+  background: #0597F2;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

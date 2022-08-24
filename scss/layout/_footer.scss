@@ -2,20 +2,25 @@ footer{
     background-color: $color-footer;
     color: $color-textos;
     font-family: $font-textos;
-    @include FlexCenterColumn;
-
+    h2{
+        font-size: 16px;
+    }
     .newsletter{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        &__formulario{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        &__boton {
+            margin-top: 10px;
+            margin-bottom: 30px;
             @include estiloBoton;
         }
+    }
+    .redesSociales{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
     }
 
     }

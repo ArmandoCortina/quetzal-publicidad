@@ -1,6 +1,15 @@
 header{
-    background-color: $color-header;
-    color: $color-textos;
-    font-family: $font-textos;
-    @include FlexCenterColumn;
+    background-image: linear-gradient(rgba(12, 17, 29, 0.816), rgba(12,17,29,0.816)), url(../imagenes/quetzal1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+
+        .logo{
+                padding:5px;
+        }
     }

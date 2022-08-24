@@ -1,0 +1,74 @@
+.container .form .form__header .form__title {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #0597F2; 
+    text-align: center;
+    padding: 14px 0;
+}
+.container .form .form__header .form__title span {
+    color: white;   
+}
+
+.container .form {
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-height: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.container .form .form__label{
+    display: block;
+    color: #0597F2;
+    font-size: 16px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.container .form .form__input, .form__textarea{
+    background: rgba(0,0,0,00.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #0597F2;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.container .form .form__textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.container .form .submit {
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 16px;
+    outline: none;
+    background: #0069f3;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: all .5s ease; 
+}
+
+.container .form .submit:hover {
+    background: #0597F2;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 50px;
+}
