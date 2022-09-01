@@ -1,11 +1,40 @@
 @mixin estiloBoton {
-    border: none;
-    border-radius: 10px;
-    background-color: $color-boton;
-    color: $color-texto-boton;
-    font-size: 15px;
-    width: 150px;
-    height: 35px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
 }
 
+@mixin mobile {
+    @media screen and (min-width: 576px) {
+        @content;
+    } 
+}
 
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    } 
+}
+
+@mixin DesktopLarge {
+    @media screen and (min-width: 992px) {
+        @content;
+    } 
+}
+
+@mixin DesktopExtraLarge {
+    @media screen and (min-width: 1200px) {
+        @content;
+    } 
+}
+
+@mixin DesktopExtraExtraLarge {
+    @media screen and (min-width: 1400px) {
+        @content;
+    } 
+}

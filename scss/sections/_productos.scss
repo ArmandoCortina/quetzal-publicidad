@@ -32,6 +32,13 @@ h2{
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     transition: all 400ms ease;
+
+    @include mobile{
+        width: 400px;
+    }
+    @include tablet{
+        width: 300px;
+    }
 }
 .cardp:hover {
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
@@ -59,14 +66,7 @@ h2{
 }
 
 .cardp .containerp a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400ms ease;
+   @include estiloBoton;
 }
 
 .cardp .containerp a:hover{

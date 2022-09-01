@@ -9,15 +9,7 @@ height: 50vh;
 }
 
 .boton1 a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    color: #2fb4cc;
-    border: 1px solid #2fb4cc;
-    border-radius: 4px;
-    transition: all 400ms ease;
+    @include estiloBoton;
 }
 
 .boton1 a:hover{
