@@ -1,0 +1,107 @@
+.nosotros{
+    padding: 20px 15px;
+    text-align: justify;
+}
+
+/*bloques*/
+.bloque{
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bloque .imagen{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.bloque img{
+    width: 100%;
+    max-height: 400px;
+    padding: 10px 0;
+}
+.bloque .parrafo{
+    display: flex;
+    align-items: center;
+}
+.bloque p{
+    max-width: 300px;
+    padding: 10px 15px;
+    text-align: justify;
+}
+
+/*bloques*/
+.bloque2{
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.bloque2 .imagen{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.bloque2 img{
+    width: 100%;
+    max-height: 400px;
+    padding: 10px 0;
+}
+.bloque2 .parrafo{
+    display: flex;
+    align-items: center;
+}
+.bloque2 p{
+    max-width: 300px;
+    padding: 10px 15px;
+    text-align: justify;
+}
+
+/*ofrecemos*/
+
+.ofrecemos{
+    margin: 20px 0;
+}
+
+.ofrecemos h2{
+    text-align: center;
+}
+
+.ofrecemos p{
+    text-align: justify;
+    padding: 0 10px;
+}
+
+.ofrecemos .lista1, .lista2{
+    padding: 10px 20px;
+}
+
+/*clientes*/
+
+.clientes{
+    margin: 20px 0;
+    padding: 0 15px;
+}
+.clientes h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.clientes .imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+.clientes img{
+    width: 100%;
+    max-width: 300px;
+    margin: 5px 0;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}

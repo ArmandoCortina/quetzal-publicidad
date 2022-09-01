@@ -1,0 +1,38 @@
+.slide img{
+height: 50vh;
+}
+
+.boton1{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.boton1 a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.boton1 a:hover{
+    background-color: #2fb4cc;
+    color: white;
+}
+
+
+.bloque1home h1{
+    margin: 10px 0;
+    color: black;
+    text-align: center;
+}
+
+p{
+    padding: 10px 10px;
+    text-align: center;
+}

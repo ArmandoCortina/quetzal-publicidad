@@ -66,9 +66,136 @@
     background: #0597F2;
 }
 
-.mapa {
+
+
+/*estilos cards*/
+
+.bloque1{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bloque1 img{
+    max-height: 500px;
+    overflow: hidden;
+}
+.bloque1 img{
+ width: 100%;
+}
+.bloque1texto{
+    text-align: center;
+}
+.bloque1texto h1{
+    font-size: 35px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.bloque1texto p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.medioscontacto{
+    width: 100%;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+.redesSociales{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ubicacion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.horario{
+    padding: 20px 0;
+    text-align: center;
+}
+.horario p{
+    padding: 5px 0;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+.card{
+    width: 300px;
     padding: 10px;
-    margin-top: 50px;
+    margin: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.card .container{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .container p{
+    line-height: 1.5;
+    color: #6a6a6a;
+    font-size: 15px;
+}
+
+.card .container h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.card .container a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+    font-size: 20px;
+}
+
+.card .container a:hover{
+    background-color: #2fb4cc;
+    color: white;
+}
+
+.mapa{
+    height: 300px;
+}
+
+.mapa iframe{
+    width: 100%;
+    height: 300px;
 }
